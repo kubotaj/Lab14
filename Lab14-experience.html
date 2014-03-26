@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>experience</title>
+    <link rel="stylesheet" type="text/css" href="Lab14.css">
+    <style>
+      body {background-color:#e6e6e6;}
+      .hidden {visibility:hidden;}
+    </style>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+    </script>
+
+    <script>
+      function change()
+      {
+      if (document.getElementById("click1").innerHTML!=" ")
+        document.getElementById("click1").innerHTML=" ";
+      else
+        document.getElementById("click1").innerHTML="Abble";
+      }
+    </script>
+
+    <script>
+      $(document).ready(function(){
+        $("#button2").click(function(){
+          $("#click2").toggle();
+        });
+      });
+    </script>
+
+  </head>
+
+  <body>
+    <div id="container" style="background-color:#31b404;width:700px;">
+      <div id="header">
+	<h1 style="text-align:center;">Experience of Joji Kubota</h1>
+      </div>
+
+      <div id="menu" style="background-color:#3adf00;height:400px;width:100px;float:left;">
+	<b>Menu</b>
+	<br>
+	<a href="Lab14-index.html">Home</a>
+	<br>
+	<a href="Lab14-about.html">About me</a>
+	<br>
+	<a href="Lab14-education.html">Education</a>
+	<br>
+	<a href="Lab14-experience.html">Experience</a>
+      </div>
+
+      <div id="content" style="background-color:#f1f8e0;color:#424242;height:400px;width:600px;float:left;">
+	<p>
+	  Worked at those <b>three</b> companies.
+	</p>
+	<div id="p1">
+	  Cisco Systems
+	</div>
+	<div id="p2" class="hidden">
+	  Fakebook
+	</div>
+	<div id="p3">
+	  Macrosoft
+	</div>
+
+	<br><br><br>
+	<button onclick="change()">Click me to hide/show my future job(js version)</button>
+	<p id="click1" style=color:blue;>
+	  Abble
+	</p>
+
+	<br><br><br>
+	<button id="button2">Click me to hide/show my future job(jQuery version)</button> 
+	<p id="click2" style=color:red;>
+	  Gaagle
+	</p>
+      </div>
+
+      <div id="footer" style="background-color:#31b404;clear:both;text-align:center;">
+	Coyright &copy; Joji Kubota
+      </div>
+    </div>
+      
+      
+  </body>
+</html>
